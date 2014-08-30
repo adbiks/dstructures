@@ -80,23 +80,20 @@ newptr->link=NULL;
 return newptr;
 }
 /*INSERTION AT BEGINING*/
-
-/*INSERTION AT END*/
-void insertend(struct node *n)
+void insertbeg(struct node *m)
 {
-struct node *temp;
 if(start==NULL)
 {
-start=n;
+start=m;
 }
 else
 {
-temp=start;
-while(temp->link!=NULL)
-temp=temp->link;
-temp->link=n;
+m->link=start;
+start=m;
 }
 }
+/*INSERTION AT END*/
+
 /*INSERTION AFTER A GIVEN ELEMENT*/
 void insertmid(struct node *o)
 {
