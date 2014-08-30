@@ -80,18 +80,7 @@ newptr->link=NULL;
 return newptr;
 }
 /*INSERTION AT BEGINING*/
-void insertbeg(struct node *m)
-{
-if(start==NULL)
-{
-start=m;
-}
-else
-{
-m->link=start;
-start=m;
-}
-}
+
 /*INSERTION AT END*/
 void insertend(struct node *n)
 {
