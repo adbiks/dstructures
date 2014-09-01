@@ -93,7 +93,21 @@ start=m;
 }
 }
 /*INSERTION AT END*/
-
+void insertend(struct node *n)
+{
+struct node *temp;
+if(start==NULL)
+{
+start=n;
+}
+else
+{
+temp=start;
+while(temp->link!=NULL)
+temp=temp->link;
+temp->link=n;
+}
+}
 /*INSERTION AFTER A GIVEN ELEMENT*/
 void insertmid(struct node *o)
 {
